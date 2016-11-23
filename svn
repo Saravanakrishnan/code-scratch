@@ -1,0 +1,13 @@
+svn copy \
+  https://IP_ADDRESS/svn/APPLICATION_NAME/WORKING_PATH \
+  https://IP_ADDRESS/svn/APPLICATION_NAME/TAG_APPLICATION_WITH_VERSION \
+  -m "COMMENT"
+
+IP_ADDRESS                    => Ip address of SVN Server
+APPLICATION_NAME              => Repository Name (like Portfolio)
+WORKING_PATH                  => trunk/APPLICATION_NAME
+TAG_APPLICATION_WITH_VERSION  => tags/APPLICATION_NAME_V1
+COMMENT                       => Comment for tagging
+
+
+Note: This assumes that, your working files will be inside trunk and the tagging/versioned files will be there in tags folder.
