@@ -11,3 +11,19 @@ COMMENT                       => Comment for tagging
 
 
 Note: This assumes that, your working files will be inside trunk and the tagging/versioned files will be there in tags folder.
+
+
+************************************
+
+Trunk   -> is a main branch recommended by Subversion, but you are in no way forced to 
+           create it. You could call it 'main' or 'releases', or not have one at all!
+Branch  -> represents a development effort. It should never be named after a resource 
+           (like 'vonc_branch') but after:
+            -> a purpose 'myProject_dev' or 'myProject_Merge'
+            -> a release perimeter 'myProjetc1.0_dev'or myProject2.3_Merge' or 'myProject6..2_Patch1'...
+Tag     -> is a snapshot of files in order to easily get back to that state. The problem
+           is that tag and branch is the same in Subversion. And I would definitely 
+           recommend the paranoid approach:
+          
+Note    -> A tag is final. Its content should never change. NEVER. Ever. You forgot a
+          line in the release note? Create a new tag. Obsolete or remove the old one
